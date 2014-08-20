@@ -1,0 +1,612 @@
+
+
+<!-- ============================================================================================= -->
+<!-- Just edit the information above. No need to edit anything below unless you want to change the slides. -->
+<!-- ============================================================================================= -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<style type="text/css">
+.knitr.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+},
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0em 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.rimage.left {
+  text-align: left;
+}
+.rimage.right {
+  text-align: right;
+}
+.rimage.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+<style type="text/css">
+.knitr.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+},
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0em 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.rimage.left {
+  text-align: left;
+}
+.rimage.right {
+  text-align: right;
+}
+.rimage.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title> The rOpenSci project - open tools for open science </title>
+	<meta name="description" content="The rOpenSci project">
+	<meta name="author" content="Karthik Ram">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!-- Core and extension CSS files -->
+	<script src="//use.edgefonts.net/anonymous-pro.js"></script> 
+    <script src="http://use.edgefonts.net/quattrocento-sans.js"></script>
+    <script src="http://use.edgefonts.net/gentium-book-basic.js"></script>
+    <script src="//use.edgefonts.net/kotta-one.js"></script>
+	<link rel="stylesheet" href="core/deck.core.css">
+	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="extensions/status/deck.status.css">
+	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="extensions/automatic/deck.automatic.css">
+	<link rel="stylesheet" href="themes/style/barug.css">
+	<link rel="stylesheet" href="themes/transition/fade.css">
+	<link rel="stylesheet" href="themes/style/knitr.css">
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+
+
+
+
+ <body class="deck-container">
+
+<!--    ##############    slide delimiter  ##############    -->
+
+<section class="slide" id="ropensci">
+	<div>
+	<br><br>
+	<hgroup>
+	<img src="images/ropensci.png">
+	<center><h3><span style="color:#34495E; font-size:70px">Fostering open science and open data with R</span><i class="ss-globe"></i></h3><br><br>
+
+
+	<h3>
+Karthik Ram
+
+
+	<br> <span style="color:#464749">Made possible by: </span><br><img src="images/sloan_logo2.png"></a> </h3>
+	<br>
+
+ropensci.github.io/ropensci_intro/
+
+
+
+
+	</center>
+	</hgroup>
+	</div>
+</section>
+
+
+<!--    ##############    slide delimiter  ##############    -->
+
+<section class="slide" id="science_lacks_reproducibility">
+<br><br>
+<blockquote>Most science is not reproducible or repeatable, even within the same lab group over time.
+</blockquote>
+</section>
+
+
+<section class="slide" id="economist_reproducibility">
+<br><br>
+<h2>A reproducibility crisis</h2>
+<img src="images/how_science_goes_wrong.jpg">
+</section>
+
+
+<!--    ##############    slide delimiter  ##############    -->
+
+<section class="slide" id="writing_papers_first">
+<br><h2>The scientific workflow</h2>
+<img src="images/paper.png">
+</section>
+
+ <!--    ##############    slide delimiter  ##############    -->
+<section class="slide" id="nsf_biosketches">
+<br><br>
+	<blockquote>Instructions for preparation of the Biographical Sketch have been revised to rename the <span style="background-color: #ebe455;">"Publications" section to "Products"</span> and amend terminology and instructions accordingly. This change makes clear that products may include, but are not limited to, publications, <span style="background-color: #ebe455;">data sets, software, patents, and copyrights.
+</blockquote>
+
+<br><i class="ss-icon ss-link"> <a href="http://www.nsf.gov/pubs/2013/nsf13004/nsf13004.jsp?WT.mc_id=USNSF_109"> Issuance of a new NSF Proposal & Award Policies and Procedures Guide (October 4<sup>th</sup>)</a></i></br>
+</section>
+
+
+ <!--    ##############    slide delimiter  ##############    -->
+<section class="slide" id="plos">
+<br><h2>PLOS Data Policy</h2>
+	<blockquote>the Data Policy states the <span style="background-color: #ebe455;">‘minimal dataset’</span> consists “of the <span style="background-color: #ebe455;">dataset used to reach the conclusions</span> drawn in the manuscript with related metadata and methods, and any additional data required to replicate the reported study findings in their entirety. This does not mean that authors must submit all data collected as part of the research, but that they must provide the <span style="background-color: #ebe455;">data that are relevant to the specific analysis presented in the paper</span>.
+</blockquote>
+
+</section>
+
+
+<!--    ##############    slide delimiter  ##############    -->
+<section class="slide" id="ropensci_main">
+<br><br>
+    <div>
+
+    <img src="images/ropensci.png" height="118" width="301">
+    <br><br>
+    <blockquote>Enable access  to scientific data repositories, full-text of articles, and science metrics and also <i>facilitate a culture shift in the scientific community.</i></blockquote>
+    </div>
+</section>    
+
+    <!--    ##############    slide delimiter  ##############    -->
+<section class="slide" id="ropensci_packages">
+<br><br>
+	<div>
+	<img src="images/ropensci.png" height="118" width="301">
+	<br> <span style="font-size:165%; font-family:'Museo Sans'"><center>More info @ <span style="color:#3163a6;"><code>ropensci.org/packages</code></span></center></span><br>
+    <table  cellpadding="40" cellspacing="40">
+<tr>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<td>
+		<img src="images/clear_line.png" height="1" width="250">
+<pre><img src="images/line_separator_blue.png"><span style="color:#669900; font-family:'Museo Sans'; font-size:110%"><i class="ss-icon ss-box"></i> Data</span>
+Treebase, Fishbase, 
+Flybase,
+GBIF, Vertnet
+Dryad, ITIS
+NPN, Taxize
+opensnp</pre><br></td>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<td>
+<img src="images/clear_line.png" height="1" width="250"><pre><img src="images/line_separator_red.png"><span style="color:#c4a12e; font-family:'Museo Sans'; font-size:105%"><i class="ss-icon ss-notebook"></i>&nbsp; Journals</span>
+PLOS
+Springer
+textmine
+pensoft</pre>
+</td>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<td><img src="images/clear_line.png" height="1" width="250"><pre><img src="images/line_separator_green.png"><span style="color:#e2460e; font-family:'Museo Sans'; font-size:105%"><i class="ss-icon ss-list"></i>&nbsp; Data Publication</span>
+figshare
+Mendeley
+DataONE, 
+rAltmetric, EML,
+rNEXML</pre>
+</td>
+</tr>
+    </table>
+	</div>
+</section>
+
+    <!--    ##############    slide delimiter  ##############    -->
+
+
+<!-- =============================== -->
+	<!-- Start Big Picture -->
+<!-- =============================== -->
+
+<section class="slide" id="big_picture">
+<br><br>
+<img src="images/museum_data.png"> <h2>Access all available ecological data</h2>
+<br><br>
+<h3>Liberating 400+ million observation records<br> Full text 100k articles<br> Data from papers in &gt; 200 journals</h3>
+</section>
+
+<section class="slide" id="data_dryad">
+<br><br>
+	<img src="images/dryad.png" height="119" width="107" align="left"><h2>Accessing data behind papers - <code>dryad</code></h2>
+
+
+
+<div class="chunk" id="dryad"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(rdryad)</span>
+<span class="hl std">dryaddat</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">download_url</span><span class="hl std">(</span><span class="hl str">&quot;10255/dryad.1759&quot;</span><span class="hl std">)</span>
+<span class="hl com"># Get a file given the URL</span>
+<span class="hl std">file</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">dryad_getfile</span><span class="hl std">(dryaddat)</span>
+<span class="hl kwd">dim</span><span class="hl std">(file)</span>
+</pre></div>
+<div class="output"><pre class="knitr r">## [1] 131  30
+</pre></div>
+</div></div>
+
+<a href="http://datadryad.org/handle/10255/dryad.1759">Dataset</a>
+</section>
+
+
+    <!--    ##############    slide delimiter  ##############    -->
+
+
+<section class="slide" id="download_data2">
+<h2>Biodiversity records from museums</h2>
+<div class="chunk" id="ecoengine"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(ecoengine)</span>
+<span class="hl std">pinus_data</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">ee_observations</span><span class="hl std">(</span><span class="hl kwc">genus</span> <span class="hl std">=</span> <span class="hl str">&quot;Pinus&quot;</span><span class="hl std">,</span> <span class="hl kwc">georeferenced</span> <span class="hl std">=</span> <span class="hl num">TRUE</span><span class="hl std">,</span> <span class="hl kwc">page</span> <span class="hl std">=</span> <span class="hl num">1</span><span class="hl opt">:</span><span class="hl num">25</span><span class="hl std">)</span>
+<span class="hl kwd">nrow</span><span class="hl std">(pinus_data</span><span class="hl opt">$</span><span class="hl std">data)</span>
+<span class="hl com"># [1] 625</span>
+</pre></div>
+</div></div>
+
+</section>
+
+
+    <!--    ##############    slide delimiter  ##############    -->
+
+<section class="slide" id="download_data5">
+<h2>Get complete and current taxonomic records</h2>
+<div class="chunk" id="taxize_names"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">classification</span><span class="hl std">(</span><span class="hl kwd">c</span><span class="hl std">(</span><span class="hl str">&quot;Helianthus annuus&quot;</span><span class="hl std">),</span> <span class="hl kwc">db</span> <span class="hl std">=</span> <span class="hl str">&quot;ncbi&quot;</span><span class="hl std">)</span>
+</pre></div>
+<div class="output"><pre class="knitr r">## $`Helianthus annuus`
+##                    name         rank
+## 1    cellular organisms      no rank
+## 2             Eukaryota superkingdom
+## 3         Viridiplantae      kingdom
+## 4          Streptophyta       phylum
+## 5        Streptophytina      no rank
+## 6           Embryophyta      no rank
+## 7          Tracheophyta      no rank
+## 8         Euphyllophyta      no rank
+## 9         Spermatophyta      no rank
+## 10        Magnoliophyta      no rank
+## 11      Mesangiospermae      no rank
+## 12       eudicotyledons      no rank
+## 13           Gunneridae      no rank
+## 14         Pentapetalae      no rank
+## 15             asterids     subclass
+## 16          campanulids      no rank
+## 17            Asterales        order
+## 18           Asteraceae       family
+## 19          Asteroideae    subfamily
+## 20 Heliantheae alliance      no rank
+## 21          Heliantheae        tribe
+## 22           Helianthus        genus
+## 23    Helianthus annuus      species
+## 
+## attr(,"class")
+## [1] "classification"
+## attr(,"db")
+## [1] "ncbi"
+</pre></div>
+</div></div>
+
+</section>
+
+
+
+<!--    ##############    slide delimiter  ##############    -->
+
+<section class="slide" id="rwbclimate">
+<h2>World Bank climate knowledge portal <code>rWBclimate</code></h2>
+<pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(rWBclimate)</span>
+<span class="hl std">eu_basin</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">create_map_df</span><span class="hl std">(Eur_basin)</span>
+<span class="hl std">eu_basin_dat</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">get_ensemble_temp</span><span class="hl std">(Eur_basin,</span> <span class="hl str">&quot;annualanom&quot;</span><span class="hl std">,</span> <span class="hl num">2080</span><span class="hl std">,</span> <span class="hl num">2100</span><span class="hl std">)</span>
+</pre>
+<img src="images/rWBClimate.png">
+</section>
+
+
+<!-- ============================= -->
+	<!-- Begin data viz -->
+ <!-- ============================= -->
+<section class="slide" id="viz_data">
+<br>
+<div>
+<img src="images/interactive_maps.png"> <h2>Interactively visualize and analyze data</h2>
+<h3 class="viz_data">Explore these data interactively, including any plots you might make.</h3><br>
+</div>
+</section>
+
+
+<section class="slide" id="antweb_map">
+<br><h2>Taxon specific databases - AntWeb</h2>
+<div class="chunk" id="antweb"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(AntWeb)</span>
+<span class="hl std">acd</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">aw_data</span><span class="hl std">(</span><span class="hl kwc">genus</span> <span class="hl std">=</span> <span class="hl str">&quot;acanthognathus&quot;</span><span class="hl std">)</span>
+<span class="hl kwd">aw_map</span><span class="hl std">(acd)</span>
+</pre></div>
+</div></div>
+
+<img src="images/antweb_map.png">
+</section>
+
+    <!--    ##############    slide delimiter  ##############    -->
+
+<!-- The plot.ly widget does not seem to render on GitHub. So commenting this out for now. -->
+<!-- 
+<section class="slide" id="interactive_figs">
+<br>
+<h2>Interactive figures - <code>plotly</code></h2>
+<iframe height="600" id="igraph" scrolling="no" seamless="seamless"
+                src="https://plot.ly/~RgraphingAPI/556" width="600" frameBorder="0"></iframe>
+
+</section>
+ -->
+    <!--    ##############    slide delimiter  ##############    -->
+
+<section class="slide" id="figshare">
+	<br><br>
+	<h2>Sharing data - <code>(figshare)</code></h2>
+	<div>
+	<h3 class="figshare">Using fig<b>share</b>'s <a href="http://api.figshare.com/docs/">API</a> it is possible to share figures, data and any other object generated in <code>R</code> and obtain a data citation.</h3><br>
+<div class="chunk" id="figshare"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(rfigshare)</span>
+<span class="hl std">id</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">fs_create</span><span class="hl std">(</span><span class="hl str">&quot;Fisheries dataset&quot;</span><span class="hl std">,</span> <span class="hl str">&quot;A dataset containing catch for 4 important commerical fish species&quot;</span><span class="hl std">,</span>
+    <span class="hl str">&quot;dataset&quot;</span><span class="hl std">)</span>
+<span class="hl kwd">fs_upload</span><span class="hl std">(id,</span> <span class="hl str">&quot;dat.csv&quot;</span><span class="hl std">)</span>
+</pre></div>
+</div></div>
+
+</div>
+</section>
+
+
+<!--    ##############    slide delimiter  ##############    -->
+
+<section class="slide" id="sample-workflow">
+  <h2>A reproducible workflow (in R)</h2><br><br>
+<table cellspacing=100 cellpadding=100><tr><td>
+<pre><img src="images/line_separator_purple.png"><strong>Load your own data</strong>
+	<p>load all raw untransformed data.</p>
+</pre></td>
+<td valign="center"><br>&nbsp;<strong>→</strong> &nbsp;</td>
+<td>
+
+<pre><img src="images/line_separator_blue.png"><strong>Acquire additional data from the web</strong>
+<br><p>e.g. resolve taxonomic names, acquire additional datasets.</p>
+</pre></td>
+<td valign="center"><br>&nbsp;<strong>→</strong> &nbsp;</td>
+<td>
+<pre><img src="images/line_separator_red.png"><strong>Document everything with metadata</strong>
+<br><p>The <code>EML</code> package makes it really easy to add valid EML to your data</p>
+</pre></td>
+<td valign="center"><br>&nbsp;<strong>→</strong> &nbsp;</td>
+<td>
+<pre><img src="images/line_separator_green.png"><strong>Submit to a persistent repository</strong>
+<br><p>Share your data by submitting to figshare or one at your institution</p>
+
+<br><p>Generate interactive maps, viewers.</p>
+</pre></td>
+</tr></table>
+<br>
+</section>
+    <!--    ##############    slide delimiter  ##############    -->
+
+
+<section class="slide" id="writing_papers">
+<br><h2>The scientific workflow</h2>
+<img src="images/paper.png">
+</section>
+
+    <!--    ##############    slide delimiter  ##############    -->
+
+
+<section class="slide" id="writing_papers_new">
+<br><h2>The open scientific workflow</h2>
+<img src="images/paper2.png">
+</section>
+
+
+
+<!--    ##############    closing slide  ##############    -->
+<section class="slide" id="outro">
+	<div>
+	<hgroup>
+	<h1>ropensci.org</h1>
+	<h2><a href="http://GitHub.com/ropensci"  style="color:#010101;"> ropensci on GitHub</a><br>
+	<a href="http://twitter.com/ropensci"  style="color:#79cef7;"> @ropensci on Twitter </a><br>
+	Questions or comments to: 		
+karthik dot ram at gmail dot com
+	<h2>To navigate this presentation, type <span style="color:#e64b65;font-style:bold; text-shadow: none"><b>M</a></span> to see all slides. <br><b><span style="color:#e64b65;font-style:bold; text-shadow: none"><b>G</a></span> to go to a specific slide</h2>
+
+</hgroup>
+</div>
+</section>
+
+<!-- ============================================================================= -->
+<!-- ====      END PRESENTATION  ==== -->
+<!-- Everything below can be ignored (just js libraries) -->
+<!-- ============================================================================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="jquery-1.7.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/blank/deck.blank.js"></script>
+
+<!-- Initialize the deck -->
+  <script>
+    $(function() {
+      $.extend(true, $.deck.defaults, {
+         automatic: {
+     			startRunning: true,
+     			cycle: false,
+     			slideDuration: 15000
+     		},
+     		classdata: {
+		      'bullet-point-timing': {
+		        duration: 100
+		      }
+		    }
+      });
+      $.deck('.slide');
+    })
+  </script>
+ 
+
+</body>
+</html>
