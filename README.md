@@ -5,7 +5,7 @@ This repo provides all the material for our ambassadors to run short talks or wo
 
 Simply `fork` or clone this repo, make some edits to the slides (see README in `slides`) and decide which material will be most relevant to your audience. Then choose the appropriate tutorials (and note the suggested length of time for each topic in the respective README files). 
 
-Table of contents
+## Available slide decks
 
 | topic | description | suggested time |
 | ----- | ---------- | --------------- |
