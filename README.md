@@ -9,7 +9,10 @@ Table of contents
 
 | topic | description | suggested time |
 | ----- | ---------- | --------------- |
-| Introduction | A short lightning talk on the project | 5-10 minutes |
+| [rOpenSci introduction](https://ropensci.github.io/ambassador-packet/slides/ "The rOpenSci project - open tools for open science") (web slide deck) | A short lightning talk on the project | 5-10 minutes |
+| [rOpenSci introduction, Powerpoint](https://ropensci.github.io/ambassador-packet/slides/) (web slide deck) | A short lightning talk on the project | 5-10 minutes |
+| [rOpenSci introduction](https://ropensci.github.io/ambassador-packet/slides/) (web slide deck) | A short lightning talk on the project | 5-10 minutes |
+
 
 
 Pull requests are most welcome.
