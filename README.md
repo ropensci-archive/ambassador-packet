@@ -1,9 +1,8 @@
+[![Project Status: Abandoned – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.](http://www.repostatus.org/badges/latest/abandoned.svg)](http://www.repostatus.org/#abandoned)
 
-# rOpenSci ambassadors program
+# rOpenSci ambassadors program (abandoned program)
 
 This repo provides all the material for our ambassadors to run short talks or workshops. The repo contains a slide deck (see `slides` folder) for a 15 minute talk (with notes on the slides), as well as detailed tutorials on various packages (or suites of packages) in the `vignettes` folder. 
-
-Simply `fork` or clone this repo, make some edits to the slides (see README in `slides`) and decide which material will be most relevant to your audience. Then choose the appropriate tutorials (and note the suggested length of time for each topic in the respective README files). 
 
 ## Available slide decks
 
@@ -15,7 +14,5 @@ Simply `fork` or clone this repo, make some edits to the slides (see README in `
 | [rOpenSci introduction](https://github.com/ropensci/ambassador-packet/blob/master/slides.pdf?raw=true) (PDF deck) | A short lightning talk on the project | 5-10 minutes |
 
 
-
-Pull requests are most welcome.
 
 [![ropensci footer](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
