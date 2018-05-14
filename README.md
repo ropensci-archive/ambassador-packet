@@ -3,7 +3,7 @@
 
 ⚠
 
-The ambassador program is now closed
+The ambassador program is now closed.
 
 ⚠
 
